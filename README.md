@@ -1,0 +1,1 @@
+# trigoSoja2Tec2026
