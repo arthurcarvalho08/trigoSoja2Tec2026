@@ -126,3 +126,30 @@ body {
     object-fit: cover;
     border-radius: 8px;
 }
+
+.fale-conosco h2,
+.fale-conosco > p{
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.fale-conosco form{
+    display: flex;
+    flex-direction: column;
+}
+
+.fale-conosco label{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #2e431c;
+    font-weight: bold;
+}
+
+.fale-conosco input,
+.fale-conosco textarea{
+    padding: 10px;
+    border: 1px solid #FFFEF9;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
