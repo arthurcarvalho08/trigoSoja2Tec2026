@@ -74,7 +74,7 @@
                     selvagem que foram domesticadas e melhoradas por cientistas da antiga China.
                     As primeiras citações do grão aparecem no período entre 2883 e 2838 AC, quando a soja era
                     considerada um grão sagrado, ao lado do arroz, do trigo, da cevada e do milheto.</p>
-                    <p>No final da década de 60, dois fatores internos fizeram o Brasil começar a enxergar a soja como um
+                <p>No final da década de 60, dois fatores internos fizeram o Brasil começar a enxergar a soja como um
                     produto comercial, fato que mais tarde influenciaria no cenário mundial de produção do grão. Na
                     época, o trigo era a principal cultura do Sul do Brasil e a soja surgia como uma opção de verão, em
                     sucessão ao trigo. O Brasil também iniciava um esforço para produção de suínos e aves, gerando
@@ -88,7 +88,27 @@
             <h2>Contato</h2>
             <p>Preencha os campos abaixo para entrar em contato.</p>
 
-            <form id="formulario-contato" action=""></form>
+            <form id="formulario-contato" action="https://formsubmit.co/ajax/vladismara@gmail.com&quot; method=" post">
+                <input type="hidden" name="_subject" value="Nova mensagem do site Trigo e Soja">
+                <input type="hidden" name="_template" value="table">
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="Nome" placeholder="Digite seu nome completo" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="Telefone" placeholder="(99) 9 9 999-9999" maxlength="16" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="Mensagem" rows="6" placeholder="Escreva sua mensagem aqui!"
+                    required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <p id="resposta-formulario" class="aviso-formulario" aria-live="polite"></p>
         </section>
     </main>
 </body>
