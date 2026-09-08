@@ -129,3 +129,63 @@ body {
 
 /*TEMAS*/
 
+body.modo-escuro .simulador {
+    background-color: #1e2817;
+}
+
+body.modo-escuro .slider-rotulo {
+    color: #fcf8ec;
+}
+
+body.modo-escuro .calculo-resultado h3 {
+    color: #a3c978;
+}
+
+.secao-contato {
+    justify-content: center;
+}
+
+.formulario-contato {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.campo label {
+    font-weight: bold;
+    color: #2e431c;
+}
+
+.campo input,
+.campo textarea {
+    padding: 10px;
+    border: 1px solid #c2b49a;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    outline: 2px solid #52702f;
+}
+
+body.modo-escuro .campo label {
+    color: #fcf8ec;
+}
+
+body.modo-escuro .campo input,
+body.modo-escuro .campo textarea {
+    background-color: #1c2417;
+    color: #fcf8ec;
+    border-color: #52702f;
+}
