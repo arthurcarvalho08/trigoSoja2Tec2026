@@ -128,17 +128,17 @@ body {
 }
 
 .fale-conosco h2,
-.fale-conosco > p{
+.fale-conosco>p {
     margin-bottom: 15px;
     text-align: center;
 }
 
-.fale-conosco form{
+.fale-conosco form {
     display: flex;
     flex-direction: column;
 }
 
-.fale-conosco label{
+.fale-conosco label {
     margin-top: 10px;
     margin-bottom: 5px;
     color: #2e431c;
@@ -146,7 +146,7 @@ body {
 }
 
 .fale-conosco input,
-.fale-conosco textarea{
+.fale-conosco textarea {
     padding: 10px;
     border: 1px solid #FFFEF9;
     border-radius: 4px;
@@ -154,95 +154,118 @@ body {
     font-size: 16px;
 }
 
-body.tema-escuro .cabecalho a {
-color: #FFFFFF;
+.botao-tema{
+    border: none;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #405231;
+    background-color: #AECC7E;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    cursor: pointer;
 }
+
+.botao-tema:hover{
+    background-color: #405231;
+}
+
+body.tema-escuro .cabecalho a {
+    color: #FFFFFF;
+}
+
 body.tema-escuro {
-background-color: #1C2218;
-color: #E8EFDA;
+    background-color: #1C2218;
+    color: #E8EFDA;
 }
 
 body.tema-escuro .cabecalho {
-background-color: #304127;
-color: #E8EFDA;
+    background-color: #304127;
+    color: #E8EFDA;
 }
+
 body.tema-escuro .cabecalho-subtitulo {
-color: #DEB25B;
+    color: #DEB25B;
 }
 
 body.tema-escuro .cabecalho-titulo,
 body.tema-escuro .fale-conosco label {
-color: #AECC7E;
+    color: #AECC7E;
 }
+
 body.tema-escuro .cabecalho a {
-color: #FFFFFF;
+    color: #FFFFFF;
 }
+
 body.tema-escuro .cabecalho a:hover {
-background-color: #405231;
-color: #E8EFDA;
+    background-color: #405231;
+    color: #E8EFDA;
 }
+
 body.tema-escuro .botao-tema,
 body.tema-escuro .fale-conosco button,
 body.tema-escuro .voltar {
-color: #FFFFFF;
-background-color: #AECC7E;
+    color: #FFFFFF;
+    background-color: #AECC7E;
 }
+
 body.tema-escuro .botao-tema:hover,
 body.tema-escuro .fale-conosco button:hover,
 body.tema-escuro .voltar:hover {
-background-color: #E8EFDA;
-color: #1C2218;
+    background-color: #E8EFDA;
+    color: #1C2218;
 }
+
 body.tema-escuro .descricao h2,
 body.tema-escuro .fale-conosco h2,
 body.tema-escuro footer {
-color: #E8EFDA;
+    color: #E8EFDA;
 }
+
 body.tema-escuro .secao,
 body.tema-escuro .fale-conosco {
-background-color: #262F22;
-box-shadow: 8px 8px 18px #00000059;
+    background-color: #262F22;
+    box-shadow: 8px 8px 18px #00000059;
 }
 
 body.tema-escuro .fale-conosco input,
 body.tema-escuro .fale-conosco textarea {
-border: 1px solid #304127;
-background-color: #FFFFFF;
-color: #1C2218;
+    border: 1px solid #304127;
+    background-color: #FFFFFF;
+    color: #1C2218;
 }
 
 body.tema-escuro .fale-conosco input::placeholder,
 body.tema-escuro .fale-conosco textarea::placeholder,
 body.tema-escuro .fale-conosco .aviso-formulario {
-color: #CBD4BE;
+    color: #CBD4BE;
 }
 
 body.tema-escuro .fale-conosco input:focus,
 body.tema-escuro .fale-conosco textarea:focus {
-outline: 2px solid #DEB25B;
+    outline: 2px solid #DEB25B;
 }
 
 body.tema-escuro .fale-conosco .sucesso {
-color: #8FD397;
+    color: #8FD397;
 }
 
 body.tema-escuro .fale-conosco .erro {
-color: #E88474;
+    color: #E88474;
 }
 
 body.tema-escuro footer {
-background-color: #304127;
+    background-color: #304127;
 }
 
 body.tema-escuro .fale-conosco button:disabled {
-background-color: #696F64;
-color: #FFFFFF;
+    background-color: #696F64;
+    color: #FFFFFF;
 }
 
 body.tema-escuro .descricao {
-text-shadow: 2px 2px 5px #00000059;
+    text-shadow: 2px 2px 5px #00000059;
 }
 
 body.tema-escuro .voltar {
-box-shadow: 0 3px 9px #00000073;
+    box-shadow: 0 3px 9px #00000073;
 }
