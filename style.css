@@ -388,7 +388,7 @@ body.tema-escuro .voltar {
 footer {
 min-height: 7em;
 color: var(--verde-profundo);
-background-color: var(--verde-claro);
+background-color: darkgreen(--verde-escuro);
 display: flex;
 justify-content: center;
 align-items: center;
