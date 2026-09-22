@@ -246,7 +246,7 @@ body {
     border-radius: 4px;
     padding: 8px 10px;
     color: #405231;
-    background-color: red;
+    background-color: #AECC7E;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
     cursor: pointer;
@@ -255,6 +255,12 @@ body {
 .botao-tema:hover {
     background-color: #405231;
 }
+
+body.tema-escuro .voltar {
+    box-shadow: 0 3px 9px #4037b973;
+}
+
+
 
 body.tema-escuro .cabecalho a {
     color: #FFFFFF;
