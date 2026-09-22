@@ -385,6 +385,21 @@ body.tema-escuro .voltar {
     opacity: 1;
 }
 
+footer {
+min-height: 7em;
+color: var(--verde-profundo);
+background-color: var(--verde-claro);
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 20px;
+border-radius: 5px;
+}
+
+footer p {
+line-height: 1.5;
+}
 
 @media (max-width: 800px) {
     body {
