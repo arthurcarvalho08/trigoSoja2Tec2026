@@ -246,7 +246,7 @@ body {
     border-radius: 4px;
     padding: 8px 10px;
     color: #405231;
-    background-color: #AECC7E;
+    background-color: red;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
     cursor: pointer;
@@ -386,19 +386,19 @@ body.tema-escuro .voltar {
 }
 
 footer {
-min-height: 7em;
-color: var(--verde-profundo);
-background-color: darkgreen(--verde-escuro);
-display: flex;
-justify-content: center;
-align-items: center;
-text-align: center;
-padding: 20px;
-border-radius: 5px;
+    min-height: 7em;
+    color: var(--verde-profundo);
+    background-color: darkgreen(--verde-escuro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
 }
 
 footer p {
-line-height: 1.5;
+    line-height: 1.5;
 }
 
 @media (max-width: 800px) {
