@@ -7,7 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: beige;
+    background-color: rgb(48, 160, 26);
     color: darkgreen;
     padding: clamp(6px, 2vw, 16px);
     /* clamp(mínimo, ideal, máximo) - 2VW = 2% da tela / viewport width */
@@ -16,7 +16,7 @@ body {
 
 /* INICIO DO CABECALHO */
 .cabecalho {
-    background-color: #d2ddbe;
+    background-color: #799b3b;
     color: darkgreen;
     display: flex;
     /* deixa o conteudo flex p adaptar a varios tipos de tela */
