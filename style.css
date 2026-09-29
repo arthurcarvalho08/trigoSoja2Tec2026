@@ -5,30 +5,20 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    background-color: rgb(48, 160, 26);
-    color: rgb(188, 255, 188);
-    padding: clamp(6px, 2vw, 16px);
-    /* clamp(mínimo, ideal, máximo) - 2VW = 2% da tela / viewport width */
+    background-color: rgb(210, 224, 158);
+    color: darkgreen;
 }
 
-
-/* INICIO DO CABECALHO */
 .cabecalho {
-    background-color: #799b3b;
-    color: darkgreen;
+    background-color: rgb(167, 201, 68);
     display: flex;
-    /* deixa o conteudo flex p adaptar a varios tipos de tela */
     justify-content: space-between;
-    /*espaço entre uma coisa e outra */
     align-items: center;
-    /*alinhamento*/
     gap: 20px;
-    /* so funciona se usar com display flex e é o espaço "como se fosse" um padding */
     padding: 12px 20px;
     border-radius: 5px;
-    /* arredonda os cantos */
 }
 
 .cabecalho-marca {
@@ -46,13 +36,11 @@ body {
 
 .cabecalho-subtitulo {
     font-size: 14px;
-    color: #9f7f40;
+    color: rgb(48, 65, 0);
 }
 
 .cabecalho-titulo {
-    color: #414c2f;
-    font-size: clamp (34px, 5vw, 58px);
-    color: #52702f;
+    color: darkgreen;
 }
 
 .cabecalho-lista {
@@ -63,16 +51,11 @@ body {
     gap: 8px;
 }
 
-.cabecalho-lista-item {
-    display: block;
-}
-
 .cabecalho a {
-    color: #19240f;
+    color: darkgreen;
     font-family: Calibri, sans-serif;
     font-size: 20px;
     text-decoration: none;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,28 +64,7 @@ body {
     border-radius: 4px;
 }
 
-.cabecalho a:hover {
-    background-color: #EBF1E0;
-    color: #2e431c;
-}
-
-.botao-tema {
-    border: none;
-    border-radius: 4px;
-    padding: 8px 10px;
-    color: #fcf8ec;
-    background-color: #52702f;
-    font-family: Calibri, sans-serif;
-    font-size: 18px;
-    cursor: pointer;
-}
-
-.botao-tema:hover {
-    background-color: #2e431c;
-}
-
-
-/* SEÇÃO "DESCRIÇÃO" DO CABEÇALHO */
+/* SEÇÃO TRIGO - CONFERIR EM 08/09 */
 .descricao {
     text-align: center;
     margin: 2em 0;
@@ -117,8 +79,7 @@ body {
 }
 
 /* xxxxxxxxxxxxxxxxxx 01/09 xxxxxxxxxxxxxxxxxxxxxxxxxx */
-
-/* Seções "SEÇÃO"  com texto e imagens */
+/* Seções com texto e imagens */
 .secao {
     max-width: 1200px;
     margin: 0 auto 2em;
@@ -156,59 +117,76 @@ body {
 }
 
 .imagem img {
-    /*as img que fazem parte da classe imagem */
     width: 100%;
     height: 260px;
     object-fit: cover;
     border-radius: 8px;
 }
 
-
-/* xxxxxxxxxxxxx secao CONTATO xxxxxxxxxxxxxx */
-.fale-conosco {
-    /*  22/09  */
-    max-width: 600px;
-    margin: 0 auto 2em;
-    padding: clamp(18px, 4vw, 28px);
-    background-color: #FFFEF9;
-    border-radius: 5px;
-    box-shadow: 8px 18px #2e431c2e;
-}
-
 .fale-conosco h2,
-/* titulo e paragrafo */
 .fale-conosco>p {
     margin-bottom: 15px;
     text-align: center;
 }
 
 .fale-conosco form {
-    /* formulario  */
     display: flex;
     flex-direction: column;
 }
 
 .fale-conosco label {
-    /* label = legendas */
     margin-top: 10px;
     margin-bottom: 5px;
-    color: #52702f;
+    color: #2e431c;
     font-weight: bold;
 }
 
 .fale-conosco input,
-/* caixas de entrada de texto  */
 .fale-conosco textarea {
     padding: 10px;
-    border: 1px solid #d2ddbe;
+    border: 1px solid #FFFEF9;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.fale-conosco {
+    max-width: 600px;
+    margin: 0 auto 2em;
+    padding: clamp(18px, 4vw, 28px);
+    background-color: #FFFEF9;
+    border-radius: 5px;
+    box-shadow: 8px 8px 18px #2E431C2E;
+}
+
+.fale-conosco h2,
+.fale-conosco>p {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.fale-conosco form {
+    display: flex;
+    flex-direction: column;
+}
+
+.fale-conosco label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #52702F;
+    font-weight: bold;
+}
+
+.fale-conosco input,
+.fale-conosco textarea {
+    padding: 10px;
+    border: 1px solid #D2DDBE;
     border-radius: 4px;
     font-family: Arial, sans-serif;
     font-size: 16px;
 }
 
-/* 22/09 */
 .fale-conosco input::placeholder,
-/* ajuda que é escrita dentro dos inputs */
 .fale-conosco textarea::placeholder {
     color: #5C614C;
 }
@@ -218,13 +196,11 @@ body {
 }
 
 .fale-conosco input:focus,
-/* onde ficara o foco / cursor */
 .fale-conosco textarea:focus {
     outline: 2px solid #C5973E;
 }
 
 .fale-conosco button {
-    /* botao da secao contato */
     margin-top: 20px;
     padding: 12px;
     border: none;
@@ -236,18 +212,15 @@ body {
 }
 
 .fale-conosco button:hover {
-    /* efeito do botao ao passar o mouse */
     background-color: #2E431C;
 }
 
 .fale-conosco button:disabled {
-    /* botao desabilitado  */
     background-color: #808080;
     cursor: wait;
 }
 
 .fale-conosco .aviso-formulario {
-    /* alerta de aviso do form */
     margin-top: 12px;
     margin-bottom: 0;
     color: #5C614C;
@@ -255,58 +228,41 @@ body {
 }
 
 .fale-conosco .sucesso {
-    /* aviso de sucesso do form */
     color: #236730;
     font-weight: bold;
 }
 
 .fale-conosco .erro {
-    /* aviso de erro */
     color: #912E23;
     font-weight: bold;
 }
 
-
-/*  voltar */
-.voltar {
-    position: fixed;
-    right: 18px;
-    bottom: 18px;
-    z-index: 10;
-    /* Ajuste: usamos flex para centralizar a seta dentro de um botão redondo. */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    color: #FFFFFF;
-    background-color: #aecc7e;
-    border-radius: 50%;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 1;
-    opacity: 0.85;
-    box-shadow: 0 3px 9px #2e431c47;
+.botao-tema {
+    border: none;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #405231;
+    background-color: #AECC7E;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    cursor: pointer;
 }
 
-.voltar:hover {
-    background-color:#2e431c;
-    opacity: 1;
+.botao-tema:hover {
+    background-color: #405231;
 }
 
-
-
-
-/*14/09 - TEMA ESCURO */
-
-body.tema-escuro {
-    background-color: #1C2218;
-    color: #E8EFDA;
+body.tema-escuro .voltar {
+    box-shadow: 0 3px 9px #4037b973;
 }
 
 body.tema-escuro .cabecalho a {
     color: #FFFFFF;
+}
+
+body.tema-escuro {
+    background-color: #1C2218;
+    color: #E8EFDA;
 }
 
 body.tema-escuro .cabecalho {
@@ -401,4 +357,122 @@ body.tema-escuro .voltar {
     box-shadow: 0 3px 9px #00000073;
 }
 
-/*AJUSTES PARA TELAS DE CELULARES E TABLETS */
+.voltar {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    z-index: 10;
+    /* Ajuste: usamos flex para centralizar a seta dentro de um botão redondo. */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    color: var(--branco);
+    background-color: var(--verde-folha);
+    border-radius: 50%;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1;
+    opacity: 0.85;
+    box-shadow: 0 3px 9px var(--sombra-botao);
+}
+
+.voltar:hover {
+    background-color: var(--verde-profundo);
+    opacity: 1;
+}
+
+footer {
+    min-height: 7em;
+    color: var(--verde-profundo);
+    background-color: darkgreen(--verde-escuro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+footer p {
+    line-height: 1.5;
+}
+
+@media (max-width: 800px) {
+    body {
+        padding: 6px;
+        font-size: 14px;
+    }
+
+    .secao {
+        flex-direction: column;
+        padding: 14px;
+    }
+
+    .texto,
+    .imagem {
+        padding: 6px;
+    }
+
+    .texto {
+        max-width: 100%;
+    }
+
+    .texto p {
+        text-align: left;
+        line-height: 1.7;
+    }
+
+    .cabecalho {
+        flex-direction: column;
+        text-align: center;
+        padding: 14px;
+    }
+
+    .cabecalho-marca {
+        flex-direction: column;
+        width: min(520px, 100%);
+    }
+
+    .cabecalho-subtitulo {
+        width: 100%;
+        text-align: left;
+    }
+
+    .cabecalho-imagem {
+        width: min(280px, 80vw);
+        height: 150px;
+        margin-bottom: 10px;
+    }
+
+    .cabecalho-lista {
+        width: 100%;
+        gap: 6px;
+    }
+
+    .cabecalho a {
+        font-size: 17px;
+        background-color: #EBF1E0;
+    }
+
+    .botao-tema {
+        width: 100%;
+        max-width: 280px;
+        font-size: 17px;
+    }
+
+    footer .texto {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    footer .texto p {
+        text-align: center;
+    }
+
+    .imagem img {
+        height: 220px;
+    }
+}
